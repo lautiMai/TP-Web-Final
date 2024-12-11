@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Prototipo de juego basado en la película Cars de Pixar. Creado con p5.js como parte de un proyecto académico.">
+  <link rel="stylesheet" href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css">
+  <link rel="stylesheet" href="estilos.css">
+  <title>CARS: El juego (no oficial)</title>
+</head>
+
+<body>
+  <div class="paper container">
+
+    <!-- Header -->
+    <header>
+      <h1>"CARS": El juego (no oficial)</h1>
+      <p>Integrantes: Lautaro Maidana y Faustino Ugrina</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="row flex-center">
+      <ul class="breadcrumb border">
+        <li><a href="#proyecto">Sobre el Proyecto</a></li>
+        <li><a href="#equipo">El Equipo</a></li>
+        <li><a href="#juega-ahora">Juega Ahora</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Image -->
+    <img src="img/imagen8.jpg" alt="Imagen decorativa de Cars" class="no-border">
+
+    <!-- Game Section -->
+    <section class="row flex-spaces">
+      <div class="alert alert-warning">
+        <h3>
+          Bienvenido, hemos hecho este prototipo de juego (no oficial) basado en la película de animación de Pixar "CARS". ¡Haz clic en el botón de abajo para jugar!
+        </h3>
+      </div>
+      <div class="row flex-spaces child-borders">
+        <label id="juego" class="paper-btn margin" for="modal-2">¡JUEGA YA!</label>
+      </div>
+      <input class="modal-state" id="modal-2" type="checkbox">
+      <div class="modal">
+        <label class="modal-bg" for="modal-2"></label>
+        <div class="modal-body">
+          <label class="btn-close" for="modal-2">X</label>
+          <iframe src="tpfinalparte2/index.html" frameborder="0" width="640" height="480" title="Juego: Cars"></iframe>
+        </div>
+      </div>
+    </section>
+     <!-- Project Information -->
+     <h2 id="proyecto">Datos a tener en cuenta</h2>
+     <section class="row">
+ 
+       <!-- Card 1 -->
+       <div class="sm-12 md-4 col">
+         <div class="card">
+           <img src="img/imagen2.jpg" alt="Poster de Cars">
+           <div class="card-body">
+             <h4 class="card-title">CARS: La Película</h4>
+             <h5 class="card-subtitle">La inspiración para el juego</h5>
+             <p class="card-text">
+               Nos basamos en la película de animación de Disney "CARS" para crear la trama de nuestra aventura gráfica.
+             </p>
+             <a class="paper-btn" href="https://es.wikipedia.org/wiki/Cars#">Más información</a>
+           </div>
+         </div>
+       </div>
+ 
+       <!-- Card 2 -->
+       <div class="sm-12 md-4 col">
+         <div class="card">
+           <img src="img/p5.jpg" alt="Logo de p5.js">
+           <div class="card-body">
+             <h4 class="card-title">Uso de p5.js</h4>
+             <h5 class="card-subtitle">Herramientas de programación</h5>
+             <p class="card-text">
+              Usamos p5.js para programar esta aventura gráfica, que evolucionó en el prototipo de juego que puedes jugar arriba.
+            </p>
+            <a class="paper-btn" href="https://p5js.org/#">Más información</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="sm-12 md-4 col">
+        <div class="card">
+          <img src="img/imagen4.jpg" alt="Diseño de la aventura gráfica">
+          <div class="card-body">
+            <h4 class="card-title">Aventura Gráfica</h4>
+            <h5 class="card-subtitle">El TP final, parte 1</h5>
+            <p class="card-text">
+              Antes de programar el juego, desarrollamos una aventura gráfica con múltiples finales según las decisiones del jugador.
+            </p>
+            <a class="paper-btn" href="#aventura-grafica">Más información</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Graphic Adventure Section -->
+    <article class="article">
+      <h2 id="aventura-grafica">Aventura Gráfica</h2>
+      <img src="img/imagen11.jpg" alt="Ejemplo de la aventura gráfica" class="no-border">
+      <p class="text-lead">
+        Como primera parte del TP final, realizamos una aventura gráfica basada en "CARS", con doce pantallas y tres finales diferentes.
+      </p>
+      <p>Puedes jugar a la aventura gráfica haciendo clic en el botón:</p>
+      <div class="row flex-spaces child-borders">
+        <label class="paper-btn margin" for="modal-1">Aventura Gráfica</label>
+      </div>
+      <input class="modal-state" id="modal-1" type="checkbox">
+      <div class="modal">
+        <label class="modal-bg" for="modal-1"></label>
+        <div class="modal-body">
+          <label class="btn-close" for="modal-1">X</label>
+          <iframe src="tpfinalparte1/index.html" frameborder="0" width="640" height="480" title="Aventura Gráfica"></iframe>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</body>
+
+</html>
